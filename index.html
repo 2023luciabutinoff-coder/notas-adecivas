@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+  <title>Mis Notitas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <main class="contenedor">
+
+    <!-- PANEL IZQUIERDO -->
+    <section class="panel-izquierdo">
+
+      <input
+        type="text"
+        id="nombre"
+        placeholder="Nombre de la notita"
+      >
+
+      <div class="entrada-dinero">
+        <input
+          type="number"
+          id="monto"
+          placeholder="20000"
+          min="0"
+        >
+
+        <select id="moneda">
+          <option value="USD">U$S</option>
+          <option value="ARS">ARS</option>
+        </select>
+      </div>
+
+      <div class="resultado">
+        <p id="conversion">13 U$S</p>
+        <button id="agregar">AGREGAR</button>
+      </div>
+
+    </section>
+
+    <!-- PANEL DERECHO -->
+    <section class="panel-derecho">
+
+      <div class="cuadricula" id="cuadricula">
+        <div class="nota azul">
+          <span>Vacaciones</span>
+          <span>$20.000 =</span>
+          <span>13 U$S</span>
+        </div>
+
+        <div class="nota celeste"></div>
+        <div class="nota marron"></div>
+        <div class="nota violeta"></div>
+      </div>
+
+      <div class="compra">
+        <input
+          type="text"
+          id="producto"
+          value="COMPRAR GALLETAS"
+        >
+        <button id="agregar-compra">AGREGAR</button>
+      </div>
+
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
